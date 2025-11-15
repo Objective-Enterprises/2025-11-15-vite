@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import HomePage from './HomePage'
 import AboutPage from './AboutPage'
+import BreedPage from './BreedPage'
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
+        <Route path='/breed/:breedName' element={<BreedPage />} />
       </Routes>
     </BrowserRouter>
   )
